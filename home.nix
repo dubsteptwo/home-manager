@@ -2,7 +2,9 @@
 {
   home = {
     packages = with pkgs; [
-      hello
+      cowsay
+      lolcat
+      fastfetch
     ];
   
   username = "maple";

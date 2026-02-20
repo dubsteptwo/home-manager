@@ -5,7 +5,7 @@
     nixpkgs.url = "nixpkgs/nixos-25.11";
 
     home-manager = {
-      url = "github:nix-community/home-manager/releases-23.11";
+      url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -19,7 +19,7 @@
       homeConfigurations = {
         maple = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          modules = [ ./home.nix ]
+          modules = [ ./home.nix ];
         };
       };
     };
