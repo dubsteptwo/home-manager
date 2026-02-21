@@ -2,6 +2,7 @@
 {
   home = {
     packages = with pkgs; [
+      kdePackages.kolourpaint
       vlc
       cowsay
       lolcat
