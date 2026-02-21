@@ -7,6 +7,7 @@
       cowsay
       lolcat
       fastfetch
+      desktop-file-utils
     ];
   
   username = "maple";
