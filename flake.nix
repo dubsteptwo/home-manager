@@ -19,7 +19,12 @@
       homeConfigurations = {
         maple = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          modules = [ ./home.nix ./shell.nix ];
+          modules = [ 
+            ./modules/home.nix 
+            ./modules/shell.nix 
+            ./modules/production.nix
+            ./modules/productivity.nix
+            ];
         };
       };
     };
