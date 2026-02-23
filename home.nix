@@ -9,11 +9,10 @@
       fastfetch
       desktop-file-utils
     ];
-  
-  username = "maple";
-  homeDirectory = "/home/maple";
+    username = "maple";
+    homeDirectory = "/home/maple";
 
-  stateVersion = "25.11";
+    stateVersion = "25.11";
 
   };
 }
