@@ -10,7 +10,10 @@
       desktop-file-utils
     ];
     file = {
-      "hello.txt".text = "AHAHAHAHHAHAHA";
+      "hello.txt" = {
+        text = "echo 'FUCK YOUUUUUUUUUUUUUUU I HATE YOUUUUUUUUUUU'";
+        executable = true;
+      };
     };
     username = "maple";
     homeDirectory = "/home/maple";
