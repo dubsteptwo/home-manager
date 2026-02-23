@@ -1,6 +1,24 @@
-{ lib, pkgs, ... }: let
-  username = "marpleuhghh";
-in {
+{ lib, pkgs, ... }:
+{ 
+  programs = {
+
+    # shell
+    zsh = {
+      enable = true;
+      syntaxHighlighting.enable = true;
+      oh-my-zsh = {
+        enable = true;
+        theme = "robbyrussell";
+        plugins = [
+          "git"
+          "python"
+        ];
+      };
+    };
+    #
+
+  };
+
   home = {
     packages = with pkgs; [
       kdePackages.kolourpaint
@@ -10,19 +28,7 @@ in {
       fastfetch
       desktop-file-utils
     ];
-    file = {
-      "hello.txt" = {
-        text = ''
-          #!/usr/bin/env bash
 
-          echo "FUCK YOUUUUUUUUUUUUUUU ${username} I HATE YOUUUUUUUUUUU"
-          echo " I REALLY REALLY HATE UUUUUUUU"
-          cowsay "${username} is gay"
-          ''
-        ;
-        executable = true;
-      };
-    };
     username = "maple";
     homeDirectory = "/home/maple";
 
