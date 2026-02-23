@@ -1,5 +1,6 @@
-{ lib, pkgs, ... }:
-{
+{ lib, pkgs, ... }: let
+  username = "marpleuhghh";
+in {
   home = {
     packages = with pkgs; [
       kdePackages.kolourpaint
@@ -14,9 +15,9 @@
         text = ''
           #!/usr/bin/env bash
 
-          echo "FUCK YOUUUUUUUUUUUUUUU I HATE YOUUUUUUUUUUU"
+          echo "FUCK YOUUUUUUUUUUUUUUU ${username} I HATE YOUUUUUUUUUUU"
           echo " I REALLY REALLY HATE UUUUUUUU"
-          cowsay "gay"
+          cowsay "${username} is gay"
           ''
         ;
         executable = true;
