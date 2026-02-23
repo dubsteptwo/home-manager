@@ -5,8 +5,8 @@
     packages = with pkgs; [
       krita
       kdePackages.kolourpaint
+      kdePackages.kdenlive
       blender
-      kdenlive
       wineasio
     ];
    };
