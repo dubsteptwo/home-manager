@@ -9,6 +9,9 @@
       fastfetch
       desktop-file-utils
     ];
+    file = {
+      "hello.txt".text = "AHAHAHAHHAHAHA";
+    };
     username = "maple";
     homeDirectory = "/home/maple";
 
