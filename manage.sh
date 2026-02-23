@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-curr_dir = "$(pwd)"
+curr_dir="$(pwd)"
 cd /home/maple/home-manager
 
 
