@@ -11,7 +11,14 @@
     ];
     file = {
       "hello.txt" = {
-        text = "echo 'FUCK YOUUUUUUUUUUUUUUU I HATE YOUUUUUUUUUUU'";
+        text = ''
+          #!/usr/bin/env bash
+
+          echo "FUCK YOUUUUUUUUUUUUUUU I HATE YOUUUUUUUUUUU"
+          echo " I REALLY REALLY HATE UUUUUUUU"
+          cowsay "gay"
+          ''
+        ;
         executable = true;
       };
     };
