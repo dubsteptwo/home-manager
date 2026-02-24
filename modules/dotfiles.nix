@@ -1,9 +1,10 @@
 { config, lib, ... }:
-{
-  otd-tweak = ../dots/OpenTabletDriver/Configurations;
-  otd-path = {home.username}/.local/share/OpenTabletDriver/Configurations;
-  
-  home.file = {
-    otd-tweak.source = config.lib.file.mkOutOfStoreSymlink otd-path;
+  {
+    home.file = {
+    
+      # OpenTablet Artist pro 12 tweak
+      "/home/maple/.local/share/OpenTabletDriver/Configurations/Artist.12.pro.json".source = config.lib.file.mkOutOfStoreSymlink ../dots/OpenTabletDriver/Configurations/Artist.12.Pro.json;
+    
+    
+    };
   }
-}
