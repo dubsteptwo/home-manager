@@ -22,8 +22,10 @@
           modules = [ 
             ./modules/home.nix 
             ./modules/shell.nix 
+            ./modules/desktop.nix
             ./modules/production.nix
             ./modules/productivity.nix
+            ./modules/dotfiles.nix
             ];
         };
       };
