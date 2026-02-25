@@ -9,7 +9,8 @@ if [[ $1 == "update" ]]; then
 elif [[ $1 == "clean" ]]; then
     nix-collect-garbage -d
 elif [[ $1 == "sysupdate" ]]; then
-    sudo nixos-rebuild switch
+    cd "/etc/nixos"
+    nixos-rebuild --flake .#brostep switch
 fi
 
 cd "$curr_dir"
