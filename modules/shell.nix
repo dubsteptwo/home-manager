@@ -22,5 +22,8 @@
       fastfetch
       desktop-file-utils
     ];
+    sessionPath = [
+      "/home/maple/.local/bin"
+    ];
   };
 }
