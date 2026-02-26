@@ -5,6 +5,7 @@
     packages = with pkgs; [
       vlc
       strawberry
+      xarchiver
     ];
    };
 }
