@@ -9,6 +9,9 @@
       # Openbox config
       "/home/maple/.config/openbox".source = config.lib.file.mkOutOfStoreSymlink "/home/maple/home-manager/dots/openbox";
 
+      # fonts
+      "/home/maple/.local/share/fonts".source = config.lib.file.mkOutOfStoreSymlink "/home/maple/home-manager/dots/fonts";
+
       # Openbox theme
       "/home/maple/.themes/SBDots".source = config.lib.file.mkOutOfStoreSymlink "/home/maple/home-manager/dots/themes/SBDots";
 
