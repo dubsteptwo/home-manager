@@ -1,13 +1,15 @@
 #!/bin/sh
 # POLYWINS
 
+source "/home/maple/.cache/wal/colors.sh"
+
 # SETTINGS {{{ ---
 
-active_text_color="#FFFFFF"
+active_text_color="$foreground"
 active_bg=
-active_underline="#FFFFFF"
+active_underline="$color3"
 
-inactive_text_color="#FFFFFF"
+inactive_text_color="$color7"
 inactive_bg=
 inactive_underline=
 

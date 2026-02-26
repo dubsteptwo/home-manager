@@ -16,11 +16,9 @@
 #
 #xfce-mcs-manager &
 
-wallpaper="/home/maple/home-manager/dots/wallpapers/dogass wallapper.png"
 
 xinput set-prop 11 "libinput Accel Profile Enabled" 0 1 &
 xinput --set-prop 11 295 -0.6 &
-nitrogen --set-auto --head=0 "$wallpaper" &
-nitrogen --set-auto --head=1 "$wallpaper" &
+nitrogen --restore &
 picom &
 polybar &
