@@ -10,6 +10,7 @@
       nitrogen
       pywal16
       wmctrl 
+      lxappearance
     ];
    };
 }

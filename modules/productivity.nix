@@ -6,6 +6,7 @@
       vlc
       strawberry
       xarchiver
+      flameshot
     ];
    };
 }

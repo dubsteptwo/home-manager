@@ -1,8 +1,10 @@
 { config, lib, ... }:
   {
     home.file = {
-      # Helper script
+      # Helper scripts
       "/home/maple/.local/bin/manage".source = config.lib.file.mkOutOfStoreSymlink "/home/maple/home-manager/scripts/manage.sh";
+      "/home/maple/.local/bin/ccolor".source = config.lib.file.mkOutOfStoreSymlink "/home/maple/home-manager/scripts/ccolor.sh";
+      
       # OpenTablet Artist pro 12 tweak
       "/home/maple/.local/share/OpenTabletDriver/Configurations/Artist.12.pro.json".source = config.lib.file.mkOutOfStoreSymlink "/home/maple/home-manager/dots/OpenTabletDriver/Configurations/Artist.12.Pro.json";
     
@@ -14,6 +16,7 @@
 
       # Openbox theme
       "/home/maple/.themes/SBDots".source = config.lib.file.mkOutOfStoreSymlink "/home/maple/home-manager/dots/themes/SBDots";
+      "/home/maple/.themes/Redmond97 SE Pywal".source = config.lib.file.mkOutOfStoreSymlink "/home/maple/home-manager/dots/themes/Redmond97 SE Pywal";
 
       # Picom config
       "/home/maple/.config/picom".source = config.lib.file.mkOutOfStoreSymlink "/home/maple/home-manager/dots/picom";

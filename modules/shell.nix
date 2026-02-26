@@ -12,10 +12,10 @@
           "python"
         ];
       };
-      initExtra = ''
+      initContent = ''
         (cat ~/.cache/wal/sequences &)
         source ~/.cache/wal/colors-tty.sh
-      ''
+      '';
     };
   };
 
@@ -25,6 +25,8 @@
       lolcat
       fastfetch
       desktop-file-utils
+      imagemagickBig
+      bc
     ];
     sessionPath = [
       "/home/maple/.local/bin"
