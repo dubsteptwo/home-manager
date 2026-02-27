@@ -7,6 +7,7 @@
       strawberry
       xarchiver
       flameshot
+      vesktop
     ];
    };
 }

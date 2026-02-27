@@ -1,4 +1,4 @@
-# art packages
+# production packages
 { lib, pkgs, ... }:
 {
    home = {
@@ -7,7 +7,6 @@
       kdePackages.kolourpaint
       kdePackages.kdenlive
       blender
-      wineasio
     ];
    };
 }

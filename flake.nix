@@ -25,6 +25,7 @@
             ./modules/desktop.nix
             ./modules/production.nix
             ./modules/productivity.nix
+            ./modules/wine.nix
             ./modules/dotfiles.nix
             ];
         };
