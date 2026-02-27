@@ -4,12 +4,14 @@ curr_dir="$(pwd)"
 wallpaper="$1"
 skip_gtk="$2"
 
+echo "wallpaper='$wallpaper'" > "/home/maple/home-manager/dots/wallpapers/wallpaper"
+
 if [[ $1 == "" ]]; then
     echo "Help: ccolor <wallpaper path> <'skip-gtk' to skip gtk, anything else if nah>"
 elif [[ $1 != "" ]]; then
     nitrogen --set-zoom-fill --head=0 "$wallpaper"
     nitrogen --set-zoom-fill --head=1 "$wallpaper"
-    wal -i "$wallpaper" --saturate -0.2 -n
+    wal -i "$wallpaper" --contrast 15 --saturate 0 -n
     pkill polybar
     polybar &
     if [[ "$skip_gtk" != "skip-gtk" ]]; then

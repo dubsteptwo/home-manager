@@ -11,6 +11,7 @@
       pywal16
       wmctrl 
       lxappearance
+      pastel
     ];
    };
 }
