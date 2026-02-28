@@ -3,8 +3,11 @@
 curr_dir="$(pwd)"
 wallpaper="$1"
 skip_gtk="$2"
+skip_wallpaper_setting="$3"
 
-echo "wallpaper='$wallpaper'" > "/home/maple/home-manager/dots/wallpapers/wallpaper"
+if [[ $skip_wallpaper_setting != "skip-wallpaper-setting" ]]; then
+    echo "wallpaper='$wallpaper'" > "/home/maple/home-manager/dots/wallpapers/wallpaper"
+fi
 
 if [[ $1 == "" ]]; then
     echo "Help: ccolor <wallpaper path> <'skip-gtk' to skip gtk, anything else if nah>"
