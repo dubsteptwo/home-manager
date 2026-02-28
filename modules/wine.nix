@@ -5,16 +5,7 @@
     packages = with pkgs; [
       bottles
       wineasio
+      protonup-qt
     ];
-    programs = {
-      java.enable = true;
-      steam = {
-        enable = true;
-        package = pkgs.steam.override {
-          withPrimus = true;
-          extraPkgs = pkgs: [ bumblebee glxinfo jdk ];
-        };
-      };
-    };
   };
 }

@@ -31,5 +31,8 @@
     sessionPath = [
       "/home/maple/.local/bin"
     ];
+    sessionVariables = {
+      QT_QPA_PLATFORMTHEME = "qt6ct";
+    };
   };
 }

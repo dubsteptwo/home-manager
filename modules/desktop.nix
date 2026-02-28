@@ -11,6 +11,8 @@
       pywal16
       wmctrl 
       lxappearance
+      kdePackages.qt6gtk2
+      kdePackages.qt6ct
       pastel
     ];
    };

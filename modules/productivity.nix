@@ -5,9 +5,11 @@
     packages = with pkgs; [
       vlc
       strawberry
+      kdePackages.gwenview
       xarchiver
       flameshot
       vesktop
+      qbittorrent
     ];
    };
 }
