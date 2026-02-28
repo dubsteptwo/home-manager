@@ -38,7 +38,7 @@ drun-display-format: "{name} [<span weight='light'><i>({generic})</i></span>]";
 /*	case-smart: false;*/
 /*	cycle: true;*/
 sidebar-mode: true;
-/*	hover-select: false;*/
+hover-select: true;
 /*	eh: 1;*/
 /*	auto-select: false;*/
 /*	parse-hosts: false;*/
