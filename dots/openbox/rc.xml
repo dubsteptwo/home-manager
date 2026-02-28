@@ -325,6 +325,33 @@
         <command>rofi -show drun</command>
       </action>
     </keybind>
+    <keybind key="W-e">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>thunar</name>
+        </startupnotify>
+        <command>thunar</command>
+      </action>
+    </keybind>
+    <keybind key="W-Return">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>xfce4-terminal</name>
+        </startupnotify>
+        <command>xfce4-terminal</command>
+      </action>
+    </keybind>
+    <keybind key="Print">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>flameshot</name>
+        </startupnotify>
+        <command>flameshot gui</command>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
