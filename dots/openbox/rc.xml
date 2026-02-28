@@ -352,6 +352,15 @@
         <command>flameshot gui</command>
       </action>
     </keybind>
+    <keybind key="A-F4">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>quit openbox</name>
+        </startupnotify>
+        <command>openbox --exit</command>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
