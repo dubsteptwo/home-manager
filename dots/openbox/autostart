@@ -18,11 +18,17 @@
 
 source "/home/maple/home-manager/dots/wallpapers/wallpaper"
 
+
 xrandr --output HDMI-0 --rotate inverted &
 xinput set-prop 11 "libinput Accel Profile Enabled" 0 1 &
 xinput --set-prop 11 295 -0.6 &
 setxkbmap -layout "us,ru" -option "grp:win_space_toggle" &
 sleep 10 &
-/home/maple/home-manager/scripts/ccolor.sh $wallpaper skip-gtk skip-wallpaper-setting &
 picom &
 flameshot &
+if [[ -e "/home/maple/home-manager/dots/openbox/ran" ]]; then
+    /home/maple/home-manager/scripts/ccolor.sh $wallpaper skip-gtk skip-wallpaper-setting &
+else
+    /home/maple/home-manager/scripts/ccolor.sh $wallpaper skip-wallpaper-setting &
+    touch "/home/maple/home-manager/dots/openbox/ran"
+fi

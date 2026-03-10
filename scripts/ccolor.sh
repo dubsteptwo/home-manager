@@ -3,9 +3,8 @@
 curr_dir="$(pwd)"
 wallpaper="$1"
 skip_gtk="$2"
-skip_wallpaper_setting="$3"
 
-if [[ $skip_wallpaper_setting != "skip-wallpaper-setting" ]]; then
+if [[ $2 != "skip-wallpaper-setting" || $3 != "skip-wallpaper-setting" ]]; then
     echo "wallpaper='$wallpaper'" > "/home/maple/home-manager/dots/wallpapers/wallpaper"
 fi
 
